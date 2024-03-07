@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <load-page-component />
+  <main>
+    <go-to-top-component />
+    <header-component />
+    <advantage-component />
+    <features-component />
+    <projects-component />
+    <say-component />
+    <posts-component />
+    <footer-component />
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoadPageComponent from './components/LoadPageComponent.vue'
+import GoToTopComponent from './components/GoToTopComponent.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
+import AdvantageComponent from './components/AdvantageComponent.vue'
+import FeaturesComponent from './components/FeaturesComponent.vue'
+import ProjectsComponent from './components/ProjectsComponent.vue'
+import SayComponent from './components/SayComponent.vue'
+import PostsComponent from './components/PostsComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LoadPageComponent,
+    GoToTopComponent,
+    HeaderComponent,
+    AdvantageComponent,
+    FeaturesComponent,
+    ProjectsComponent,
+    SayComponent,
+    PostsComponent,
+    FooterComponent,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>

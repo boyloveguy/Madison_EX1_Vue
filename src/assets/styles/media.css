@@ -1,0 +1,345 @@
+@media screen and (max-width: 1300px) {
+    .logo-container {
+        display: grid;
+        gap: 54px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .body-post-container-card {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .body-advantage-layout {
+        flex-direction: column;
+    }
+
+    :root {
+        --primary-width-screen: 90% !important;
+    }
+
+    .header-title {
+        font-family: var(--font-inknut);
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .header-content {
+        padding-top: 50px;
+    }
+
+    .header-img-container {
+        position: absolute;
+        left: calc(-10vh + 300px);
+        top: calc(50vh);
+    }
+
+    .body-advantage-video {
+        margin-bottom: 100px;
+    }
+
+    .body-advantage-video-banner {
+        left: 0;
+    }
+
+    .body-features-card {
+        min-width: 90vw;
+    }
+
+    .last-dot {
+        display: block;
+    }
+
+    .footer-form {
+        width: 150%;
+    }
+
+    .body-post-card {
+        align-items: center;
+    }
+
+    .body-post-card-container{
+        width: 50%;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+    .header-title {
+        font-family: var(--font-inknut);
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .header-content {
+        padding-top: 50px;
+    }
+
+    .footer-form {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .preloader {
+        background-size: 50%;
+    }
+
+    .nav-link-container,
+    .body-projects-menu {
+        display: none !important;
+    }
+
+    .header-menu-icon {
+        display: block;
+    }
+
+    .header-title {
+        font-family: var(--font-inknut);
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .header-disctiption {
+        width: 100%;
+    }
+
+    .header-img-container {
+        position: absolute;
+        left: calc(-10vh + 100px);
+        top: calc(80vh);
+    }
+
+    .header-content {
+        padding-top: 50px;
+    }
+
+    .header-bg-img,
+    .header-img,
+    .header-shadow-img {
+        width: 50vw;
+    }
+
+    .header-img {
+        position: absolute;
+        z-index: -1;
+        top: 40px;
+        left: -40px;
+        width: 397px;
+        height: 298px;
+    }
+
+    .header-bg-img {
+        width: 329px;
+        height: 360px;
+    }
+
+    .header-shadow-img {
+        position: absolute;
+        z-index: -2;
+        top: -90px;
+        right: -420px;
+        width: 268px;
+        height: 268px;
+    }
+
+    .body-advantage-title,
+    .body-features-title,
+    .body-projects-title,
+    .body-say-title {
+        font-family: var(--font-inknut);
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .body-features-layout,
+    .body-projects-layout,
+    .body-post-layout {
+        flex-direction: column;
+    }
+
+    .half-screen {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .body-advantage-btn-container {
+        padding: 250px 0 150px 0 !important;
+    }
+
+    .body-say-bg {
+        padding: 500px 0 150px 0 !important;
+    }
+
+    .body-features-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .body-say-card-container {
+        position: absolute;
+        top: 50px;
+        overflow-x: hidden;
+        width: 90vw;
+    }
+
+    .body-projects-menu-selection {
+        display: block;
+        width: 100%;
+    }
+
+    .body-projects-menu-title {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15.62px;
+        font-size: var(--font-DM);
+    }
+
+    .body-projects-menu-side {
+        grid-template-rows: 100%;
+    }
+
+    .footer-menu-content,
+    .footer-layout,
+    .body-say-layout {
+        flex-direction: column;
+    }
+
+    .footer-form {
+        width: 90vw;
+    }
+
+    .footer-form-container {
+        top: 40px;
+    }
+
+    .footer-menu-contrainer {
+        margin-top: 100px;
+        grid-template-columns: 100%;
+    }
+
+    .bg-video {
+        width: 600px;
+    }
+
+    .btn-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 110px;
+    }
+
+    .header-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .footer-logo {
+        grid-template-columns: repeat(3, 20%);
+    }
+
+    .body-advantage-video {
+        margin-bottom: 100px;
+    }
+
+    .body-advantage-video-banner {
+        left: 0;
+    }
+
+    .body-advantage-video iframe {
+        width: 90vw;
+    }
+
+    .body-features-bg,
+    .body-projects-bg,
+    .body-say-bg {
+        padding: 100px 0 !important;
+    }
+
+    .body-say-bg-logo {
+        margin-top: 550px;
+    }
+
+    .body-projects-card-bg img {
+        height: 50vw;
+    }
+
+    .body-projects-card-bg {
+        height: 380px;
+        position: relative;
+    }
+
+    .body-post-card {
+        width: 90vw;
+    }
+
+    .body-post-card-container {
+        width: 100%;
+    }
+
+    .body-post-card-container img {
+        width: 100%;
+
+    }
+
+    .body-say-card {
+        width: 90vw;
+    }
+
+    .body-features-card {
+        min-width: 90vw;
+    }
+
+    .footer-logo {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .body-projects-card-bg img {
+        height: 80vw;
+    }
+
+    .body-say-bg-logo {
+        margin-top: 700px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .body-say-bg-logo {
+        margin-top: 800px;
+    }
+
+    .body-projects-card-content h2 {
+        font-family: var(--font-inknut);
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 48px;
+        margin: 0;
+    }
+}
