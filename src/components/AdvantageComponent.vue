@@ -2,11 +2,7 @@
   <section>
     <div class="body-advantage-bg">
       <div class="body-advantage-btn-container" style="padding: 150px 0px">
-        <button
-          @click="prevSlideHeader()"
-          class="body-advantage-btn-left"
-          style="margin-right: 3px"
-        >
+        <button @click="prevSlideHeader()" class="body-advantage-btn-left" style="margin-right: 3px">
           <img src="../assets/images/Triangle-left.svg" alt="image" />
         </button>
         <button @click="nextSlideHeader()" class="body-advantage-btn-right">
@@ -15,10 +11,7 @@
         <span class="body-advantage-tab-page"></span>
       </div>
       <hr />
-      <div
-        class="flex-box body-advantage-layout reveal"
-        style="padding: 150px 0px"
-      >
+      <div class="flex-box body-advantage-layout reveal" style="padding: 150px 0px">
         <div class="body-advantage-video half-screen">
           <div class="body-advantage-video-banner text-center-x">
             <img class="bg-video" src="../assets/images/Image-Advantage.png" alt="image" />
@@ -31,15 +24,11 @@
         <div class="half-screen">
           <h1 class="body-advantage-title">LETS TAKE ADVANTAGE</h1>
           <P>ABLE CLOUD BENEATH WAS DISHED</P>
-          <P style="margin: 30px 0"
-            >Best for active freelancers and designers who need more projects
-            and premium features code and unlock more.</P
-          >
+          <P style="margin: 30px 0">Best for active freelancers and designers who need more projects
+            and premium features code and unlock more.</P>
           <div class="flex-box">
             <div class="btn-learn-more text-center">
-              <a href="https://madison-technologies.com/" target="_blank"
-                >LEARN MORE</a
-              >
+              <a href="https://madison-technologies.com/" target="_blank">LEARN MORE</a>
             </div>
             <button class="services-btn">Explore Services</button>
           </div>
@@ -91,7 +80,7 @@ hr {
   text-transform: uppercase;
 }
 
-.body-advantage-title + p {
+.body-advantage-title+p {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -99,7 +88,7 @@ hr {
   margin-top: 34px;
 }
 
-.body-advantage-title + p + p,
+.body-advantage-title+p+p,
 .body-features-description,
 .body-features-card-description,
 .body-projects-description,
@@ -170,7 +159,7 @@ button:hover,
 }
 
 .inactive {
-  display: none;
+  display: none !important;
 }
 
 .active {
@@ -184,7 +173,6 @@ button:hover,
 
 <script setup>
 import $ from 'jquery';
-// import { ref, onMounted } from 'vue'
 
 // Slide Header
 let currentHeader = 1;
@@ -209,9 +197,8 @@ const handleChangeHeader = (n) => {
       element.classList.add("header-active");
     }
   });
-  document.querySelector(".body-advantage-tab-page").innerHTML = `${
-    currentHeader + "/" + countBanner
-  }`;
+  document.querySelector(".body-advantage-tab-page").innerHTML = `${currentHeader + "/" + countBanner
+    }`;
 };
 
 function prevSlideHeader() {
@@ -224,17 +211,15 @@ function nextSlideHeader() {
 
 // Handle Play Video
 const handlePlayVideo = () => {
-  $(document).ready(function () {
-    $(".body-advantage-video-banner").addClass("inactive");
-    $(".body-advantage-video-play").addClass("active");
-    $(".body-advantage-video-play").append(
-      `<iframe height="400px" width="95%" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>`
-    );
-  });
+  $(".body-advantage-video-banner").addClass("inactive");
+  $(".body-advantage-video-play").addClass("active");
+  $(".body-advantage-video-play").append(
+    `<iframe height="400px" width="95%" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>`
+  );
 };
 
 setTimeout(() => {
-    setInterval(nextSlideHeader, 5000);
+  setInterval(nextSlideHeader, 5000);
 }, 2000)
 
 </script>
