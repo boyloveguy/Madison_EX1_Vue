@@ -66,3 +66,14 @@
         transform: scale(3);
     }
   }
+
+.body-features-card:hover,
+.body-projects-card-bg:hover,
+.body-say-card:hover,
+.body-post-card-container:hover,
+.btn-play image:hover{
+  transform: scale(95%);
+  opacity: 0.9;
+  transition: 0.5s;
+  cursor: pointer;
+}

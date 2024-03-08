@@ -4,34 +4,29 @@
     <section>
       <div class="navbar">
         <div class="header-bg flex-box" style="justify-content: space-between">
-          <div class="header-logo"><a href="#header-content">AGENCY</a></div>
+          <div class="header-logo"><a href="#header-content" class="header-logo-link">
+              <span class="header-logo-A">A</span>
+              <span class="header-logo-G">G</span>
+              <span class="header-logo-E">E</span>
+              <span class="header-logo-N">N</span>
+              <span class="header-logo-C">C</span>
+              <span class="header-logo-Y">Y</span>
+            </a></div>
           <div class="nav-right flex-box">
             <nav class="nav-link full-width">
               <div class="nav-link-container">
                 <a class="nav-option" href="#about">About</a>
-                <a class="nav-option" href="#portfolio" style="margin: 0px 60px"
-                  >Portfolio</a
-                >
+                <a class="nav-option" href="#portfolio" style="margin: 0px 60px">Portfolio</a>
                 <a class="nav-option" href="#contact">Contact</a>
               </div>
               <div id="sidebar" class="sidebar">
-                <a
-                  href="javascript:void(0)"
-                  class="close-btn"
-                  @click="closeSidebar()"
-                  >❌</a
-                >
+                <a href="javascript:void(0)" class="close-btn" @click="closeSidebar()">❌</a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
               </div>
               <div class="header-menu-icon">
-                <img
-                  class="sidebar_toggler"
-                  @click="openSidebar()"
-                  src="../assets/images/menu.svg"
-                  alt="image"
-                />
+                <img class="sidebar_toggler" @click="openSidebar()" src="../assets/images/menu.svg" alt="image" />
               </div>
             </nav>
           </div>
@@ -40,10 +35,8 @@
       <div class="header-bg">
         <!-- HEADER-CONTENT -->
         <div id="header-content">
-          <div
-            class="pos-relative header-content-container header-active"
-            style="z-index: 1; width: 100%; padding-top: 70px"
-          >
+          <div class="pos-relative header-content-container header-active"
+            style="z-index: 1; width: 100%; padding-top: 70px">
             <div class="header-content">
               <h1 class="header-title">WE CREATE AMAZING SITES WITH EASE</h1>
               <div class="flex-box">
@@ -54,27 +47,12 @@
               </div>
             </div>
             <div class="header-img-container">
-              <img
-                class="header-shadow-img"
-                src="../assets/images/combined-shape.png"
-                alt="image"
-              />
-              <img
-                class="header-bg-img"
-                src="../assets/images/Rectangle.png"
-                alt="image"
-              />
-              <img
-                class="header-img"
-                src="../assets/images/Bitmap.png"
-                alt="image"
-              />
+              <img class="header-shadow-img" src="../assets/images/combined-shape.png" alt="image" />
+              <img class="header-bg-img" src="../assets/images/Rectangle.png" alt="image" />
+              <img class="header-img" src="../assets/images/Bitmap.png" alt="image" />
             </div>
           </div>
-          <div
-            class="pos-relative header-content-container"
-            style="z-index: 1; width: 100%; padding-top: 70px"
-          >
+          <div class="pos-relative header-content-container" style="z-index: 1; width: 100%; padding-top: 70px">
             <div class="header-content">
               <h1 class="header-title">
                 HELLO WORLD! HELLO WORLD! HELLO WORLD!
@@ -87,21 +65,9 @@
               </div>
             </div>
             <div class="header-img-container">
-              <img
-                class="header-shadow-img"
-                src="../assets/images/combined-shape.png"
-                alt="image"
-              />
-              <img
-                class="header-bg-img"
-                src="../assets/images/Rectangle.png"
-                alt="image"
-              />
-              <img
-                class="header-img"
-                src="../assets/images/Bitmap.png"
-                alt="image"
-              />
+              <img class="header-shadow-img" src="../assets/images/combined-shape.png" alt="image" />
+              <img class="header-bg-img" src="../assets/images/Rectangle.png" alt="image" />
+              <img class="header-img" src="../assets/images/Bitmap.png" alt="image" />
             </div>
           </div>
         </div>
@@ -295,5 +261,40 @@ window.addEventListener("click", (e) => {
   color: #fff;
   border: none;
   border-radius: 4px;
+}
+
+.nav-option:hover {
+  transform: scale(130%);
+  color: var(--primary-btn-color);
+  transition: 0.5s;
+}
+
+.header-logo:hover {
+  transform: scale(130%);
+  transition: 0.5s;
+}
+
+.header-logo:hover span:nth-child(1) {
+  color: #179fd3;
+}
+
+.header-logo:hover span:nth-child(2) {
+  color: #58a749;
+}
+
+.header-logo:hover span:nth-child(3) {
+  color: #fd8321;
+}
+
+.header-logo:hover span:nth-child(4) {
+  color: #f22c7f;
+}
+
+.header-logo:hover span:nth-child(5) {
+  color: #e8f22c;
+}
+
+.header-logo:hover span:nth-child(6) {
+  color: #a02cf2;
 }
 </style>
